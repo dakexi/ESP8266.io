@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>GitHubÍøÒ³</title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<button id="on">on</button>
+		<button id="off">off</button>
+		<script>
+			$(document).ready(function(){
+				$("#on").click(()=>{fetch('https://cloud.arest.io/d82co4/led?params=1')});
+				$("#off").click(()=>{fetch('https://cloud.arest.io/d82co4/led?params=0')});
+			});
+		</script>
+	</body>
+
+</html>
